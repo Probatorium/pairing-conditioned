@@ -1,0 +1,6 @@
+# The preregistration is signed by the hash of its commit. Line endings are
+# therefore normalised so that a checkout on any platform reproduces the
+# stored blob byte for byte.
+* text=auto eol=lf
+*.jsonl text eol=lf
+hooks/* text eol=lf

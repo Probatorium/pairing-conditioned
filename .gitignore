@@ -1,0 +1,7 @@
+# Third party files enter here and stay out of the public history.
+# Every one of them is recorded in THIRD-PARTY-MANIFEST.md. See CONTACT-RULES.md rule five.
+vendor/
+
+__pycache__/
+*.pyc
+.venv/

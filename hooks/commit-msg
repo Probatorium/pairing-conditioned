@@ -1,0 +1,7 @@
+#!/bin/sh
+# Figure gate. No numeral reaches a commit message of this repository until
+# it has come out of the checker. Install with: python tools/install-hooks.py
+python tools/figures.py check-message "$1" || {
+    echo "commit refused by the figure gate"
+    exit 1
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Standing gates. Install with: python tools/install-hooks.py
+python tools/gates.py || {
+    echo "commit refused by the standing gates"
+    exit 1
+}
