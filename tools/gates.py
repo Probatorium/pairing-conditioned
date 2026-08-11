@@ -5,6 +5,7 @@ Gates, in the order they run:
   1. dash gate      no forbidden dash in any tracked text file
   2. effort log     the hash chain is intact and the session structure is sound
   3. figure gate    the registry parses and every record is well formed
+  4. untouchable    contact rule four is not breached in tree, history or config
 
 The figure gate for commit messages runs from the commit-msg hook, not here,
 because it needs the message. This runner checks only that the registry it
@@ -59,6 +60,7 @@ def main():
         run("dash gate", [str(TOOLS / "dashcheck.py")]),
         run("effort log", [str(TOOLS / "effortlog.py"), "verify"]),
         registry_wellformed(),
+        run("untouchable gate", [str(TOOLS / "untouchable.py")]),
     ]
     print()
     if any(codes):

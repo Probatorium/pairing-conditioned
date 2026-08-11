@@ -54,6 +54,43 @@ list of what is staged before writing the message that describes it.
 
 ---
 
+## Defect three: the session one report undercounted its own commits
+
+**What.** `SESSION-REPORT-001.md` opens its commit section with a count of
+five and enumerates five commits. The commit that carries the report is a
+sixth, so a reader standing at the head of that session sees six where the
+report says five. The enumeration itself is correct as far as it goes; only
+the count is short, and only by the report's own commit.
+
+**How found.** By reading the head of the session against the report
+immediately after the report was committed.
+
+**Done.** Nothing to that session. It was closed, and reopening a closed
+session to adjust a self referential count would cost more in the integrity
+of the record than the count is worth: the correction would itself be a
+seventh commit, and the report would be wrong again. Recorded here, and
+recorded in the effort log of session two, which is where a reader who
+follows the chain will meet it.
+
+**Cost.** A reader who takes the count and not the enumeration is off by one
+for that session. The practice that follows: a session report states the
+commits it enumerates and says that its own commit is not among them, rather
+than stating a total.
+
+---
+
+## Known limitation, since decision six: an all digit object name is refused
+
+The figure gate can now tell an identifier from a measurement, but only where
+the two are actually distinguishable. A short git object name that happens to
+contain no hexadecimal letter, such as a seven character abbreviation made
+entirely of digits, is indistinguishable from a number and is refused.
+
+Left as it is. The alternative is a pattern that accepts any seven to forty
+digit run as an object name, which is a wide door for a measurement to walk
+through. The cost is that such a hash is written in a commit message as the
+longer form that contains a letter, or left out.
+
 ## Known limitation, not a defect: the figure gate refuses identifiers
 
 The figure gate refuses any digit sequence in a commit message that does not
@@ -68,3 +105,12 @@ are written without numerals, which they have been so far without strain.
 
 Whether to register an identifier pattern is a decision for Alexis and is
 listed as pending in the session report.
+
+**Resolved in session two by decision six.** The gate now distinguishes them,
+under three conditions: every exemption states a reason, every exemption is
+counted and printed so that nothing passes silently, and a token registered
+in `FIGURES.jsonl` can never pass as an identifier however much it looks like
+one. That last condition is what closes the hole this section worried about:
+a measurement cannot dress itself as a year, because the registry outranks
+every pattern. The text above stands as the record of the state before the
+decision and is not rewritten to agree with it.

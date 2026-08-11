@@ -89,9 +89,23 @@ word an I Ching reader would recognize for the thirty-two pairs.
 
 ## Status of the decision
 
-Open, and it belongs to Alexis. Renaming is free at this moment and stops
-being free once anything is deposited or pushed.
+DECIDED. `matching-conditioned` is adopted.
 
-Nothing in the design depends on the outcome. The preregistration defines the
-family extensionally and uses the name only as a label, so a rename requires
-no amendment to a signed text.
+- Date: 2026-08-11, in session two.
+- Decider: Alexis Garcia Hurtado.
+- Grounds: both of the two the gate reported, and they are independent of
+  each other. The compound sits in the retrieval basin of the psychology of
+  conditioning, and the source theorem calls the object a matching rather
+  than a pairing.
+- Recorded in `DECISIONS.md`, decision one.
+
+Everything above this section is the measurement that produced the
+recommendation, and it stays as it was written before the decision was taken.
+It is not rewritten to agree with the outcome, and in particular the verdict
+above still says what it said: that `pairing-conditioned` was available and
+unoccupied. It was. It was adopted against, on grounds of collision and of
+vocabulary, not on grounds of occupancy.
+
+The rename cost nothing in the design. The preregistration defines the family
+extensionally and uses no name as a load bearing term, so no signed text
+needed amending, which is why the gate was run before anything was fixed.

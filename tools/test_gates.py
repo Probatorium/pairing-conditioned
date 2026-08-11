@@ -103,6 +103,53 @@ def test_figure_gate():
           figures.scan("p below 0.05 was seen") == [(1, "0.05")])
 
 
+def test_identifier_exemptions():
+    """Decision six. An identifier may pass, a measurement may not, and the
+    registry outranks every pattern."""
+
+    def split(message, registered=frozenset()):
+        exempt, accountable = figures.analyse(message, set(registered))
+        return ([t for _, t, _, _ in exempt], [t for _, t in accountable])
+
+    ex, acc = split("see doi 10.5281/zenodo.21889328 for the deposit")
+    check("a DOI is exempted whole", acc == [] and ex)
+    check("the DOI exemption is reported as a DOI",
+          figures.analyse("doi 10.5281/zenodo.21889328", set())[0][0][2] == "doi")
+
+    ex, acc = split("Radisic (2026) proves it")
+    check("a publication year is exempted", ex == ["2026"] and acc == [])
+
+    ex, acc = split("at head 43319e2 the tree was clean")
+    check("a hexadecimal object name is exempted", ex == ["43319e2"] and acc == [])
+
+    ex, acc = split("the count was 6815987 things")
+    check("an all digit token is not taken for an object name",
+          acc == ["6815987"] and ex == [])
+
+    ex, acc = split("read at zenodo-v3 in session S002 after defect D001")
+    check("labels with digits bound to letters are exempted",
+          acc == [] and len(ex) == 3)
+
+    ex, acc = split("dated 2026-08-11 by the log")
+    check("an ISO date is exempted", ex == ["2026-08-11"] and acc == [])
+
+    ex, acc = split("Radisic (2026) reports 2016 pairs", registered={"2016"})
+    check("a registered token is never exempted, even as a year",
+          acc == ["2016"] and ex == ["2026"])
+
+    ex, acc = split("the p value was 0.05")
+    check("a bare measurement stays accountable", acc == ["0.05"] and ex == [])
+
+    ex, acc = split("Co-Authored-By: Claude Opus 5 <x@y>")
+    check("a trailer is still skipped entirely", acc == [] and ex == [])
+
+    check("every declared pattern carries a reason",
+          all(reason.strip() for _, reason, _ in figures.IDENTIFIERS))
+    check("no exemption is silent: the reporter prints when there is one",
+          figures.report_exemptions([(1, "2026", "year", "a publication year")])
+          is None)
+
+
 def main():
     print("dash gate")
     test_dash_gate()
@@ -110,6 +157,8 @@ def main():
     test_effort_chain()
     print("\nfigure gate")
     test_figure_gate()
+    print("\nidentifier exemptions")
+    test_identifier_exemptions()
     print(f"\npassed {len(PASSED)}, failed {len(FAILED)}")
     if FAILED:
         for label in FAILED:
