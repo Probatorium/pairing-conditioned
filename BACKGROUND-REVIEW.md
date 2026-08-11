@@ -48,12 +48,42 @@ work addresses" may not be written here until this file says CLOSED.
 
 Point six is the one that decides whether this lane has anything to say.
 
+## The lead that matters most, found in session two and not read
+
+While locating the received King Wen sequence at the deposit tag of
+`kingwen-orderings-replication`, the listing of that deposit showed that its
+appendix A is titled, in the deposited code, "the ladder of conditional
+nulls", with a table of its own and a dedicated protocol seed. A sibling
+repository named `null-ladder` exists and carries its own deposit tag.
+
+That is a conditional null construction, on the King Wen sequence, by the
+same author, already deposited. The question of this lane is where an
+observed count falls inside a conditional null. Those two things may be the
+same question, may be neighbouring questions, or may be unrelated beyond the
+word. **This lane does not know, because it has not read them.**
+
+It was not read in session two, on purpose. Reading it properly is background
+review work, and doing it in passing, while looking for a data file, would
+produce exactly the half informed impression this file exists to prevent. It
+is recorded here instead, at the top, as the first thing the review must
+settle.
+
+Until it is settled, the standing prohibition below is not a formality. This
+lane may be asking a question its own author has already answered, and it
+must not say otherwise, in any direction, until somebody has read them.
+
+Scope item six is where this is decided.
+
 ## Queued leads, seen but not reviewed
 
 Recorded so they are not lost, and flagged so they are not mistaken for
 review work already done. Each of these was returned incidentally by a term
 gate query, was not read, and counts for nothing until it is.
 
+- The appendix A of `kingwen-orderings-replication` at `zenodo-v3`, on a
+  ladder of conditional nulls, and the deposited repository `null-ladder`.
+  Both are readable under contact rules two and three. Inside scope items one,
+  three and six, and see the section above. Not read.
 - arXiv:2604.09234, "Statistical Properties of the King Wen Sequence: An
   Anti-Habituation Structure That Does Not Improve Neural Network Training".
   Directly inside scope item one. Not read.
