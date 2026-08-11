@@ -1,0 +1,57 @@
+{
+  "P1": {
+    "passed": true,
+    "blocks_in_adjacency_pairing": 32,
+    "blocks_in_matching": 32,
+    "in_adjacency_not_in_matching": [],
+    "in_matching_not_in_adjacency": []
+  },
+  "decomposition_check": [
+    {
+      "convention": "bottom-significant, solid as one",
+      "T_direct": 1013,
+      "W": 17,
+      "X": 996,
+      "W_plus_X": 1013,
+      "agrees": true
+    },
+    {
+      "convention": "bottom-significant, solid as zero",
+      "T_direct": 1003,
+      "W": 15,
+      "X": 988,
+      "W_plus_X": 1003,
+      "agrees": true
+    },
+    {
+      "convention": "top-significant, solid as one",
+      "T_direct": 1013,
+      "W": 17,
+      "X": 996,
+      "W_plus_X": 1013,
+      "agrees": true
+    },
+    {
+      "convention": "top-significant, solid as zero",
+      "T_direct": 1003,
+      "W": 15,
+      "X": 988,
+      "W_plus_X": 1003,
+      "agrees": true
+    }
+  ],
+  "P2": {
+    "passed": true,
+    "prior_reported": 1013,
+    "recomputed": {
+      "bottom-significant, solid as one": 1013,
+      "bottom-significant, solid as zero": 1003,
+      "top-significant, solid as one": 1013,
+      "top-significant, solid as zero": 1003
+    },
+    "conventions_reproducing_the_prior_value": [
+      "bottom-significant, solid as one",
+      "top-significant, solid as one"
+    ]
+  }
+}

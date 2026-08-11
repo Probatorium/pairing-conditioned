@@ -1,0 +1,111 @@
+{
+  "stream_independence": true,
+  "route_a": {
+    "draws": 200000,
+    "tolerance_standard_errors": 4.0,
+    "conventions": [
+      {
+        "convention": "bottom-significant, solid as one",
+        "mean_T": 1007.754605,
+        "se_T": 0.17976694471521157,
+        "deviation_in_se": 1.3650729859640627,
+        "mean_W": 15.997175,
+        "var_W": 7.987336956059781,
+        "pass_T": true,
+        "pass_W": true,
+        "pass_var_W": true
+      },
+      {
+        "convention": "bottom-significant, solid as zero",
+        "mean_T": 1008.245395,
+        "se_T": 0.17976694471521157,
+        "deviation_in_se": 1.3650729859640627,
+        "mean_W": 16.002825,
+        "var_W": 7.987336956059781,
+        "pass_T": true,
+        "pass_W": true,
+        "pass_var_W": true
+      },
+      {
+        "convention": "top-significant, solid as one",
+        "mean_T": 1007.758025,
+        "se_T": 0.17973577075872607,
+        "deviation_in_se": 1.3462818167945412,
+        "mean_W": 16.000595,
+        "var_W": 7.981904555497777,
+        "pass_T": true,
+        "pass_W": true,
+        "pass_var_W": true
+      },
+      {
+        "convention": "top-significant, solid as zero",
+        "mean_T": 1008.241975,
+        "se_T": 0.17973577075872607,
+        "deviation_in_se": 1.3462818167945412,
+        "mean_W": 15.999405,
+        "var_W": 7.981904555497777,
+        "pass_T": true,
+        "pass_W": true,
+        "pass_var_W": true
+      }
+    ],
+    "passed": true
+  },
+  "route_b": {
+    "predicate_source_sha256": "b928e9539bd184f75d5d318f635149a3ee8aed2b20df7314ceae574bb03e3e68",
+    "checks": [
+      {
+        "check": "the received arrangement is in the family, by the published predicate",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "the received arrangement is in the family, by this lane's predicate",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "check": "every draw of this sampler satisfies the published predicate",
+        "passed": true,
+        "detail": "2000 of 2000"
+      },
+      {
+        "check": "every draw satisfies this lane's own predicate",
+        "passed": true,
+        "detail": "2000 of 2000"
+      },
+      {
+        "check": "the published assembly agrees with this lane's assembly",
+        "passed": true,
+        "detail": "2000 of 2000"
+      },
+      {
+        "check": "the published decomposition recovers the permutation and the orientations this sampler chose",
+        "passed": true,
+        "detail": "2000 of 2000"
+      },
+      {
+        "check": "witness, one hexagram exchanged across two blocks",
+        "passed": true,
+        "detail": "published says False, this lane says False"
+      },
+      {
+        "check": "witness, the whole arrangement rotated by one position",
+        "passed": true,
+        "detail": "published says False, this lane says False"
+      },
+      {
+        "check": "witness, a free shuffle of all sixty-four positions",
+        "passed": true,
+        "detail": "published says False, this lane says False"
+      },
+      {
+        "check": "witness, a within-block flip, which IS in the family and must be accepted by both",
+        "passed": true,
+        "detail": "published says True, this lane says True"
+      }
+    ],
+    "passed": true
+  },
+  "passed": true
+}

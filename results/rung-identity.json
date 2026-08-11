@@ -1,0 +1,12 @@
+{
+  "declared_by_this_lane": "1130138339199322632554990773529330319360000000",
+  "orbit_from_sampler.py.sha256": "31f9dfd7edbbb68b7759c0d9f2cafd7750b2d9b913e871afdcdd39bf7dd60f7d",
+  "deposit_expression_for_P1": "math.factorial(32) * 2 ** 32",
+  "graded_degeneracy.py.sha256": "8da9b784dfce26b650ae643bf40190ef53a934a3b33abc5ed9cc5b48348a66e6",
+  "deposit_printed_cardinal": "1.1301e45",
+  "ladder_containment.py.sha256": "b928e9539bd184f75d5d318f635149a3ee8aed2b20df7314ceae574bb03e3e68",
+  "deposit_definition_of_P1": "def in_P1(arr):\n    \"\"\"P1, line 128, reached by the cross-reference at line 363 (\"the pair-preserving\n    null of Section 3.4\"): \"a conditional null that permutes the 32 pairs and flips\n    orientations within them\", \"the uniform distribution over all pair-preserving\n    rearrangements\".\n\n    So: the 32 received pairs survive as pairs, in any order, in either orientation.\n    \"\"\"",
+  "agree_printed": true,
+  "agree_exact_expression": true,
+  "neighbour_branch_after_reading": "main"
+}
