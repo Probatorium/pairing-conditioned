@@ -1,0 +1,362 @@
+{
+  "seed": 20260811,
+  "draws_per_convention": 1000000,
+  "chunk": 250000,
+  "invariance": {
+    "pairs": [
+      {
+        "conventions": [
+          "bottom-significant, solid as one",
+          "bottom-significant, solid as zero"
+        ],
+        "value_level": true,
+        "sample_level": true,
+        "holds": true
+      },
+      {
+        "conventions": [
+          "top-significant, solid as one",
+          "top-significant, solid as zero"
+        ],
+        "value_level": true,
+        "sample_level": true,
+        "holds": true
+      }
+    ],
+    "first_and_third_are_the_same_order": false,
+    "first_and_third_are_reflections": false,
+    "all_pairs_hold": true,
+    "shared_tables": [
+      {
+        "conventions": [
+          "bottom-significant, solid as one",
+          "bottom-significant, solid as zero"
+        ],
+        "same_between_block_table": false,
+        "same_within_block_vector": false,
+        "complementary_within_block_vector": true
+      },
+      {
+        "conventions": [
+          "bottom-significant, solid as one",
+          "top-significant, solid as one"
+        ],
+        "same_between_block_table": true,
+        "same_within_block_vector": false,
+        "complementary_within_block_vector": false
+      },
+      {
+        "conventions": [
+          "bottom-significant, solid as one",
+          "top-significant, solid as zero"
+        ],
+        "same_between_block_table": false,
+        "same_within_block_vector": false,
+        "complementary_within_block_vector": false
+      },
+      {
+        "conventions": [
+          "bottom-significant, solid as zero",
+          "top-significant, solid as one"
+        ],
+        "same_between_block_table": false,
+        "same_within_block_vector": false,
+        "complementary_within_block_vector": false
+      },
+      {
+        "conventions": [
+          "bottom-significant, solid as zero",
+          "top-significant, solid as zero"
+        ],
+        "same_between_block_table": true,
+        "same_within_block_vector": false,
+        "complementary_within_block_vector": false
+      },
+      {
+        "conventions": [
+          "top-significant, solid as one",
+          "top-significant, solid as zero"
+        ],
+        "same_between_block_table": false,
+        "same_within_block_vector": false,
+        "complementary_within_block_vector": true
+      }
+    ],
+    "reversal_blocks": 28,
+    "palindrome_blocks": 4,
+    "reversal_blocks_discordant_as_received": 14
+  },
+  "distinct_conventions": 2,
+  "tests_corrected_over": 8,
+  "conventions": [
+    {
+      "index": 0,
+      "name": "bottom-significant, solid as one",
+      "observed": {
+        "T": 1013,
+        "W": 17,
+        "X": 996
+      },
+      "T": {
+        "observed": 1013,
+        "family_mean": 1007.984923,
+        "family_sd": 80.45023774933685,
+        "family_min": 666,
+        "family_max": 1345,
+        "percentile_strictly_below": 52.2076,
+        "percentile_at_or_below": 52.6902,
+        "percentile_midrank": 52.4489,
+        "deviation_from_centre": 5,
+        "count_at_least_as_far": 955978,
+        "count_at_most_as_far": 53672
+      },
+      "W": {
+        "observed": 17,
+        "family_mean": 16.007155,
+        "family_sd": 2.8311456729318647,
+        "family_min": 3,
+        "family_max": 28,
+        "percentile_strictly_below": 56.8334,
+        "percentile_at_or_below": 70.0632,
+        "percentile_midrank": 63.4483,
+        "deviation_from_centre": 1,
+        "count_at_least_as_far": 860811,
+        "count_at_most_as_far": 402858
+      },
+      "X": {
+        "observed": 996,
+        "family_mean": 991.977768,
+        "family_sd": 80.39908418477734,
+        "family_min": 650,
+        "family_max": 1326,
+        "percentile_strictly_below": 51.4555,
+        "percentile_at_or_below": 52.4554,
+        "percentile_midrank": 51.95545,
+        "deviation_from_centre": 4,
+        "count_at_least_as_far": 970887,
+        "count_at_most_as_far": 48886
+      },
+      "p": {
+        "A": 0.955978044021956,
+        "B": 0.860050065908581,
+        "C": 0.9708870291129709,
+        "D": 0.053672946327053675
+      }
+    },
+    {
+      "index": 1,
+      "name": "bottom-significant, solid as zero",
+      "observed": {
+        "T": 1003,
+        "W": 15,
+        "X": 988
+      },
+      "T": {
+        "observed": 1003,
+        "family_mean": 1007.923041,
+        "family_sd": 80.52990537296054,
+        "family_min": 670,
+        "family_max": 1349,
+        "percentile_strictly_below": 47.3972,
+        "percentile_at_or_below": 47.8782,
+        "percentile_midrank": 47.6377,
+        "deviation_from_centre": 5,
+        "count_at_least_as_far": 956405,
+        "count_at_most_as_far": 53263
+      },
+      "W": {
+        "observed": 15,
+        "family_mean": 15.999147,
+        "family_sd": 2.8282305901887264,
+        "family_min": 3,
+        "family_max": 29,
+        "percentile_strictly_below": 29.8573,
+        "percentile_at_or_below": 42.9763,
+        "percentile_midrank": 36.4168,
+        "deviation_from_centre": 1,
+        "count_at_least_as_far": 859453,
+        "count_at_most_as_far": 403363
+      },
+      "X": {
+        "observed": 988,
+        "family_mean": 991.923894,
+        "family_sd": 80.48363601063528,
+        "family_min": 654,
+        "family_max": 1330,
+        "percentile_strictly_below": 47.6353,
+        "percentile_at_or_below": 48.6025,
+        "percentile_midrank": 48.1189,
+        "deviation_from_centre": 4,
+        "count_at_least_as_far": 970930,
+        "count_at_most_as_far": 48543
+      },
+      "p": {
+        "A": 0.9564050435949564,
+        "B": 0.860050065908581,
+        "C": 0.970930029069971,
+        "D": 0.053263946736053266
+      }
+    },
+    {
+      "index": 2,
+      "name": "top-significant, solid as one",
+      "observed": {
+        "T": 1013,
+        "W": 17,
+        "X": 996
+      },
+      "T": {
+        "observed": 1013,
+        "family_mean": 1008.087297,
+        "family_sd": 80.50729890922294,
+        "family_min": 651,
+        "family_max": 1349,
+        "percentile_strictly_below": 52.1181,
+        "percentile_at_or_below": 52.6143,
+        "percentile_midrank": 52.3662,
+        "deviation_from_centre": 5,
+        "count_at_least_as_far": 956027,
+        "count_at_most_as_far": 53870
+      },
+      "W": {
+        "observed": 17,
+        "family_mean": 16.000041,
+        "family_sd": 2.8269044889610244,
+        "family_min": 3,
+        "family_max": 29,
+        "percentile_strictly_below": 56.9832,
+        "percentile_at_or_below": 70.135,
+        "percentile_midrank": 63.5591,
+        "deviation_from_centre": 1,
+        "count_at_least_as_far": 859908,
+        "count_at_most_as_far": 403325
+      },
+      "X": {
+        "observed": 996,
+        "family_mean": 992.087256,
+        "family_sd": 80.45913017216935,
+        "family_min": 640,
+        "family_max": 1330,
+        "percentile_strictly_below": 51.3952,
+        "percentile_at_or_below": 52.3762,
+        "percentile_midrank": 51.8857,
+        "deviation_from_centre": 4,
+        "count_at_least_as_far": 970489,
+        "count_at_most_as_far": 49058
+      },
+      "p": {
+        "A": 0.956027043972956,
+        "B": 0.860050065908581,
+        "C": 0.9704890295109705,
+        "D": 0.05387094612905387
+      }
+    },
+    {
+      "index": 3,
+      "name": "top-significant, solid as zero",
+      "observed": {
+        "T": 1003,
+        "W": 15,
+        "X": 988
+      },
+      "T": {
+        "observed": 1003,
+        "family_mean": 1007.92333,
+        "family_sd": 80.46015806315654,
+        "family_min": 657,
+        "family_max": 1340,
+        "percentile_strictly_below": 47.3812,
+        "percentile_at_or_below": 47.8727,
+        "percentile_midrank": 47.62695,
+        "deviation_from_centre": 5,
+        "count_at_least_as_far": 956250,
+        "count_at_most_as_far": 53608
+      },
+      "W": {
+        "observed": 15,
+        "family_mean": 15.994484,
+        "family_sd": 2.828884864453408,
+        "family_min": 4,
+        "family_max": 29,
+        "percentile_strictly_below": 29.8983,
+        "percentile_at_or_below": 43.0804,
+        "percentile_midrank": 36.48935,
+        "deviation_from_centre": 1,
+        "count_at_least_as_far": 859544,
+        "count_at_most_as_far": 404113
+      },
+      "X": {
+        "observed": 988,
+        "family_mean": 991.928846,
+        "family_sd": 80.41540374670417,
+        "family_min": 640,
+        "family_max": 1326,
+        "percentile_strictly_below": 47.6089,
+        "percentile_at_or_below": 48.6047,
+        "percentile_midrank": 48.1068,
+        "deviation_from_centre": 4,
+        "count_at_least_as_far": 970877,
+        "count_at_most_as_far": 48868
+      },
+      "p": {
+        "A": 0.9562500437499563,
+        "B": 0.860050065908581,
+        "C": 0.9708770291229709,
+        "D": 0.05360894639105361
+      }
+    }
+  ],
+  "multiplicity": {
+    "method": "Holm step down",
+    "alpha": 0.05,
+    "note": "Each convention pair collapses to one test by the verified invariance. The p carried forward for a collapsed pair is the SMALLER of the two independently sampled estimates, which is the choice least favourable to the outcome the preregistration expects. See DEFECTS, the underspecification of which member supplies the p.",
+    "tests": [
+      {
+        "label": "bottom-significant, solid as one / A",
+        "p": 0.955978044021956,
+        "adjusted": 1.0
+      },
+      {
+        "label": "bottom-significant, solid as one / B",
+        "p": 0.860050065908581,
+        "adjusted": 1.0
+      },
+      {
+        "label": "bottom-significant, solid as one / C",
+        "p": 0.9708870291129709,
+        "adjusted": 1.0
+      },
+      {
+        "label": "bottom-significant, solid as one / D",
+        "p": 0.053263946736053266,
+        "adjusted": 0.42611157388842613
+      },
+      {
+        "label": "top-significant, solid as one / A",
+        "p": 0.956027043972956,
+        "adjusted": 1.0
+      },
+      {
+        "label": "top-significant, solid as one / B",
+        "p": 0.860050065908581,
+        "adjusted": 1.0
+      },
+      {
+        "label": "top-significant, solid as one / C",
+        "p": 0.9704890295109705,
+        "adjusted": 1.0
+      },
+      {
+        "label": "top-significant, solid as one / D",
+        "p": 0.05360894639105361,
+        "adjusted": 0.42611157388842613
+      }
+    ],
+    "any_adjusted_below_alpha": false
+  },
+  "verdict": {
+    "hypothesis": "H: the observed count is atypical within F",
+    "refuted": true,
+    "branch": "H is refuted: every declared test, after the multiplicity correction, yields an adjusted p of at least 0.05"
+  }
+}

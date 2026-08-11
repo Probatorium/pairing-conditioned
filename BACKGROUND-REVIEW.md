@@ -1,8 +1,29 @@
 # Background review
 
-## Status: UNSTARTED
+## Status: OPENED, NOT CLOSED
 
-Not begun, not partially begun, not inherited.
+Opened in session three by one finding, which is resolved. Everything else in
+the scope below is still unstarted. The standing prohibition remains in force
+until the status line says CLOSED.
+
+### Resolved: the family of this preregistration is not this lane's
+
+The family defined in preregistration section (b) is rung P1 of the ladder
+deposited at 10.5281/zenodo.21750029. That deposit defines the rung as "a
+conditional null that permutes the 32 pairs and flips orientations within
+them", "the uniform distribution over all pair-preserving rearrangements",
+and computes its cardinal by the same expression this lane declared in its
+signed section. Verified against the deposit read only at its tag, in
+`analysis/rung_identity.py`, with the output in `results/rung-identity.json`.
+
+The consequence is binding and is written into `RESULTS.md`: the family is
+cited, never presented as introduced here. What this lane did was measure on
+it a statistic the prior work did not measure.
+
+What this does NOT settle is scope item six below. That the family was prior
+does not tell us whether the measurement was. Nobody has read the appendix
+that carries that ladder, and until somebody does, this lane says nothing
+about whether its measurement is new either.
 
 ## Why it does not inherit
 

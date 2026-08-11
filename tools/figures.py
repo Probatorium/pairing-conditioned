@@ -32,6 +32,13 @@ status is one of:
                      and has not been recomputed here. Not usable.
   verified-here      the figure was produced or reproduced inside this
                      repository by the artefact named in verified_by.
+  superseded         a cited-unverified record that has since been measured
+                     here. It names the exact token and object it retires, so
+                     retiring a figure means saying what it was, and the
+                     retired record stays in the file. A cited-unverified
+                     record blocks its token until such a record retires it,
+                     which is how a figure moves from cited to measured
+                     without anything being deleted.
 
 Scanning skips trailer lines, that is lines of the form `Word-Word: value`
 at the start of a line, and comment lines. Everything else is scanned.
@@ -54,7 +61,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "FIGURES.jsonl"
 
-STATUSES = {"cited-unverified", "verified-here"}
+STATUSES = {"cited-unverified", "verified-here", "superseded"}
 TRAILER = re.compile(r"^[A-Za-z][A-Za-z-]*:\s")
 NUMERAL = re.compile(r"\d[\d.,]*")
 
@@ -157,6 +164,23 @@ def analyse(message, registry_tokens):
     return [exempt[k] for k in sorted(exempt)], accountable
 
 
+def standing(records, token):
+    """What the registry currently says about one token.
+
+    Returns every record for it, those that verify it here, and those that
+    still block it. A cited-unverified record blocks until a superseded
+    record naming that exact token and object retires it. Nothing is deleted:
+    the retired record and its retirement both stay in the file.
+    """
+    retired = {(r["token"], r["object"]) for r in records
+               if r["status"] == "superseded"}
+    matching = [r for r in records if r["token"] == token]
+    verified = [r for r in matching if r["status"] == "verified-here"]
+    blocking = [r for r in matching if r["status"] == "cited-unverified"
+                and (r["token"], r["object"]) not in retired]
+    return matching, verified, blocking
+
+
 def report_exemptions(exempt):
     """Condition E2: nothing passes silently."""
     if not exempt:
@@ -188,9 +212,7 @@ def check_message(path):
 
     refused = 0
     for lineno, token in accountable:
-        matching = [r for r in records if r["token"] == token]
-        verified = [r for r in matching if r["status"] == "verified-here"]
-        unverified = [r for r in matching if r["status"] == "cited-unverified"]
+        matching, verified, unverified = standing(records, token)
 
         if not matching:
             print(f"line {lineno}: figure {token!r} is not in the registry and "
@@ -224,14 +246,22 @@ def check_message(path):
 def register(token, obj, status, source, verified_by):
     if status not in STATUSES:
         raise SystemExit(f"status must be one of: {', '.join(sorted(STATUSES))}")
-    if status == "verified-here" and not verified_by:
-        raise SystemExit("verified-here requires --verified-by naming the "
-                         "artefact in this repository that produced it")
+    if status in ("verified-here", "superseded") and not verified_by:
+        raise SystemExit(f"{status} requires --verified-by naming the "
+                         f"artefact in this repository that produced it")
     records = load()
+    if status == "superseded":
+        target = [r for r in records if r["token"] == token
+                  and r["object"] == obj and r["status"] == "cited-unverified"]
+        if not target:
+            raise SystemExit("nothing to supersede: no cited-unverified record "
+                             "with that exact token and object. A figure is "
+                             "retired by naming what it was, not by guessing.")
     for r in records:
-        if r["token"] == token and r["object"] == obj:
-            raise SystemExit("that token and object are already registered; "
-                             "append a correction rather than a duplicate")
+        if r["token"] == token and r["object"] == obj and r["status"] == status:
+            raise SystemExit("that token, object and status are already "
+                             "registered; append a correction rather than a "
+                             "duplicate")
     record = {
         "token": token,
         "object": obj,

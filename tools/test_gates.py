@@ -150,6 +150,41 @@ def test_identifier_exemptions():
           is None)
 
 
+def test_supersession():
+    """A figure moves from cited to measured by retirement, not by deletion."""
+
+    def rec(token, obj, status):
+        return {"token": token, "object": obj, "status": status,
+                "source": "", "verified_by": "", "utc": ""}
+
+    cited = rec("1013", "as the prior lane reported it", "cited-unverified")
+    here = rec("1013", "as measured here under a named convention", "verified-here")
+    retire = rec("1013", "as the prior lane reported it", "superseded")
+
+    _, v, b = figures.standing([cited], "1013")
+    check("a cited figure blocks on its own", not v and len(b) == 1)
+
+    _, v, b = figures.standing([cited, here], "1013")
+    check("measuring it here does not unblock it while the citation stands",
+          len(v) == 1 and len(b) == 1)
+
+    _, v, b = figures.standing([cited, here, retire], "1013")
+    check("retiring the citation unblocks the measured figure",
+          len(v) == 1 and not b)
+
+    other = rec("1013", "a different object entirely", "cited-unverified")
+    _, v, b = figures.standing([cited, here, retire, other], "1013")
+    check("retiring one object does not retire another with the same digits",
+          len(v) == 1 and len(b) == 1)
+
+    _, _, b = figures.standing([cited, here, retire], "52")
+    check("a token with no record has nothing standing", not b)
+
+    check("the retired record is still in the registry",
+          any(r["status"] == "cited-unverified"
+              for r in [cited, here, retire]))
+
+
 def main():
     print("dash gate")
     test_dash_gate()
@@ -159,6 +194,8 @@ def main():
     test_figure_gate()
     print("\nidentifier exemptions")
     test_identifier_exemptions()
+    print("\nsupersession")
+    test_supersession()
     print(f"\npassed {len(PASSED)}, failed {len(FAILED)}")
     if FAILED:
         for label in FAILED:

@@ -116,6 +116,79 @@ does not do.
 
 ---
 
+## Defect five: the signed document required a tolerance and did not fix it
+
+**What.** Preregistration section (c) requires the sampler to reproduce the
+analytic mean "within declared Monte Carlo tolerance". Section (g) fixes a
+tolerance for p-values. Neither fixes a number for the acceptance test.
+
+**How found.** By trying to run the acceptance test and finding there was no
+threshold to run it against.
+
+**Done.** Four standard errors of the sample mean was fixed in
+`analysis/validate.py`, in the code and in its docstring, before the run and
+before any figure was looked at. Declared here rather than filled quietly.
+
+**Cost.** A tolerance chosen by the person who will use it is weaker than one
+chosen in advance by the person who cannot yet see the data, and this one was
+chosen in the session that used it. The mitigation is only that it was
+written before the run and that the observed deviation, at most 1.37 standard
+errors, is far from any threshold a reasonable person would have set. That
+mitigation is luck, not design.
+
+---
+
+## Defect six: the multiplicity rule did not say which member of a pair supplies the p
+
+**What.** Preregistration section (e) collapses two tests into one when the
+complement invariance holds for them, but the two members are sampled from
+independent streams and so return slightly different estimates. The document
+does not say which one is carried forward.
+
+**How found.** At the point of applying the correction.
+
+**Done.** The smaller of the two was taken, which is the choice least
+favourable to the outcome the document said it expected. Recorded in
+`analysis/measure.py` at the point of the choice and in `RESULTS.md`.
+
+**Cost.** None to the verdict: the two members differ by less than 0.0007
+throughout, and the verdict is identical under either choice and under no
+correction at all. The cost is to the document, which will need the rule
+stated properly if this design is ever reused.
+
+---
+
+## Finding seven, which is not a defect of this lane but a gap in its rule
+
+**What.** Reversing which end of the figure carries the most significant bit
+swaps the two members of every block that is a reversal pair. Every block
+therefore keeps its value set, the between-block table depends only on those
+sets, and so the entire law of the block order component is unchanged. The
+first and third conventions share a family law, and so do the second and
+fourth. Here they also share their observed values, because exactly half of
+the twenty-eight reversal blocks are discordant as received.
+
+So the genuine number of distinct tests is four, where the signed rule
+computes eight.
+
+**How found.** By checking, after the measurement, whether the two
+conventions that produced identical observed values had done so by accident.
+They had not.
+
+**Done, which is to say deliberately nothing.** Section (e) collapses tests
+only under the complement invariance it named and says "no other value is
+permitted". The correction was run over eight as the rule requires. Acting on
+the finding would have weakened the correction, which would have made
+refutation easier, which is the direction of the outcome the document
+expected. Taking the harder road when the rule is silent is the only way the
+rule keeps its value.
+
+**Cost.** None to the verdict, which is the same over four and over eight and
+over none. The record is that the signed rule anticipated one of the two
+collapses that exist.
+
+---
+
 ## Known limitation, since decision six: an all digit object name is refused
 
 The figure gate can now tell an identifier from a measurement, but only where

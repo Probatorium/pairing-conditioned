@@ -43,8 +43,8 @@ def registry_wellformed():
         elif r["status"] not in figures.STATUSES:
             print(f"record {i}: unknown status {r['status']!r}")
             bad += 1
-        elif r["status"] == "verified-here" and not r["verified_by"]:
-            print(f"record {i}: verified-here with no verifying artefact named")
+        elif r["status"] in ("verified-here", "superseded") and not r["verified_by"]:
+            print(f"record {i}: {r['status']} with no verifying artefact named")
             bad += 1
     if bad:
         print(f"figure registry: FAIL, {bad} malformed record(s)")
