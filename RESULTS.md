@@ -326,3 +326,18 @@ sixty-four objects and a counting function on it.
 No novelty of anything is claimed. The background review remains unclosed;
 what it has settled is recorded in `BACKGROUND-REVIEW.md`, and what it settled
 first was that the family measured here belongs to somebody else's deposit.
+
+**Added after session four, and it belongs beside the result rather than
+after it.** The review has since settled that this measurement was not made
+before in the three deposits it read, and in the same breath that this matters
+less than it sounds. The observed counts under all four conventions were
+already published. The count was already located inside a null, the
+unrestricted one, and reported there as ordinary. That null and rung P1 share
+their centre exactly, 1008, and differ only in dispersion, 86.3 against the
+80.450 measured here. A published result therefore already told a careful
+reader what this measurement would find, and this measurement confirmed it
+rather than discovered it.
+
+The reader who wants one sentence for what this lane established should take
+this one: the deflation survives the sharper null, and it survives it by the
+margin the looser null had already suggested.

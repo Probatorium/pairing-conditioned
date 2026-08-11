@@ -1,0 +1,584 @@
+{
+  "question": "does either work measure, on rung P1 or on any rung, the count of discordant pairs of the King Wen sequence against the binary order, or any quantity from which that count follows",
+  "groups": {
+    "statistic": [
+      "inversion",
+      "kendall",
+      "\\btau\\b",
+      "discordan",
+      "concordan",
+      "spearman",
+      "footrule",
+      "rank correlation"
+    ],
+    "reference order": [
+      "binary order",
+      "binary ordering",
+      "binary count",
+      "against binary",
+      "vs\\.? binary"
+    ],
+    "conditional family": [
+      "pair-preserving",
+      "pair preserving",
+      "conditional null",
+      "\\brung\\b",
+      "\\bladder\\b",
+      "\\bP1\\b",
+      "\\bP2\\b",
+      "\\bP3\\b",
+      "\\bP4\\b",
+      "\\bP5\\b"
+    ],
+    "witness figures": [
+      "\\b1013\\b",
+      "\\b1008\\b",
+      "\\b2016\\b",
+      "\\b86\\.3\\b"
+    ]
+  },
+  "kingwen": {
+    "tag": "zenodo-v3",
+    "files_swept": 7,
+    "skipped": 0,
+    "totals": {
+      "statistic": 106,
+      "reference order": 40,
+      "conditional family": 322,
+      "witness figures": 57
+    },
+    "cooccurrence_files": [
+      "ERRATA.md",
+      "README.md",
+      "V3-PLAN.md",
+      "paper.tex",
+      "verify_paper.py"
+    ],
+    "per_file": {
+      "ERRATA.md": {
+        "statistic": 10,
+        "reference order": 3,
+        "conditional family": 119,
+        "witness figures": 3
+      },
+      "README.md": {
+        "statistic": 8,
+        "reference order": 3,
+        "conditional family": 12,
+        "witness figures": 8
+      },
+      "V3-PLAN.md": {
+        "statistic": 3,
+        "reference order": 0,
+        "conditional family": 4,
+        "witness figures": 0
+      },
+      "errata-evidence/errata_e2_derivation.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 92,
+        "witness figures": 0
+      },
+      "paper.tex": {
+        "statistic": 32,
+        "reference order": 24,
+        "conditional family": 40,
+        "witness figures": 26
+      },
+      "verify_paper.py": {
+        "statistic": 53,
+        "reference order": 10,
+        "conditional family": 55,
+        "witness figures": 20
+      }
+    }
+  },
+  "ladder": {
+    "tag": "zenodo-10.5281-zenodo.21750029",
+    "files_swept": 45,
+    "skipped": 9,
+    "totals": {
+      "statistic": 58,
+      "reference order": 1,
+      "conditional family": 1982,
+      "witness figures": 5
+    },
+    "cooccurrence_files": [
+      "ARTIFACT-DEFECTS.md",
+      "DOCTRINE.md",
+      "PAPER.md",
+      "PAPER.tex",
+      "PASSAGES.md",
+      "PRIOR-ART.md",
+      "READING.md",
+      "RUNS.md"
+    ],
+    "per_file": {
+      "ANCHORS.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 14,
+        "witness figures": 0
+      },
+      "ARTIFACT-DEFECTS.md": {
+        "statistic": 8,
+        "reference order": 0,
+        "conditional family": 27,
+        "witness figures": 1
+      },
+      "CLAIMS.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 67,
+        "witness figures": 0
+      },
+      "DOCTRINE.md": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 74,
+        "witness figures": 0
+      },
+      "PAPER.md": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 218,
+        "witness figures": 0
+      },
+      "PAPER.tex": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 222,
+        "witness figures": 0
+      },
+      "PASSAGE-C-PREABSORPTION.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 26,
+        "witness figures": 0
+      },
+      "PASSAGES.md": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 263,
+        "witness figures": 0
+      },
+      "PRIOR-ART.md": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 92,
+        "witness figures": 0
+      },
+      "READING.md": {
+        "statistic": 8,
+        "reference order": 0,
+        "conditional family": 9,
+        "witness figures": 1
+      },
+      "README.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 17,
+        "witness figures": 0
+      },
+      "RUNS.md": {
+        "statistic": 33,
+        "reference order": 0,
+        "conditional family": 534,
+        "witness figures": 3
+      },
+      "SEARCHES.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 5,
+        "witness figures": 0
+      },
+      "emdash_check.py": {
+        "statistic": 0,
+        "reference order": 1,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "generated/anchors.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 1,
+        "witness figures": 0
+      },
+      "graded_degeneracy.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 50,
+        "witness figures": 0
+      },
+      "ladder_containment.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 98,
+        "witness figures": 0
+      },
+      "ladder_retrodiction.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 39,
+        "witness figures": 0
+      },
+      "make_tex.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 3,
+        "witness figures": 0
+      },
+      "mutate_verify.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 22,
+        "witness figures": 0
+      },
+      "name_sweep.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 1,
+        "witness figures": 0
+      },
+      "orbit_from_sampler.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 101,
+        "witness figures": 0
+      },
+      "orbit_sizes.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 46,
+        "witness figures": 0
+      },
+      "prereg_run.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 37,
+        "witness figures": 0
+      },
+      "prior_art.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 4,
+        "witness figures": 0
+      },
+      "resampling_risk.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 3,
+        "witness figures": 0
+      },
+      "verify_paper2.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 9,
+        "witness figures": 0
+      }
+    }
+  },
+  "forced": {
+    "tag": "zenodo-v1",
+    "files_swept": 66,
+    "skipped": 0,
+    "totals": {
+      "statistic": 386,
+      "reference order": 15,
+      "conditional family": 191,
+      "witness figures": 291
+    },
+    "cooccurrence_files": [
+      "paper/03-orbit-accounting.md",
+      "paper/06-three-historical-orderings.md",
+      "paper/07-landscape.md",
+      "paper/PAPER.md",
+      "src/hall_search.py",
+      "src/proofs.py"
+    ],
+    "per_file": {
+      "DEFINICIONES-B31.md": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "DEFINICIONES-GENERAL.md": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "DEFINICIONES-GRUPO.md": {
+        "statistic": 3,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "DEFINICIONES-RESIDUO5.md": {
+        "statistic": 3,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 3
+      },
+      "INFORME-GENERAL.md": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "INFORME-GRAY.md": {
+        "statistic": 3,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 9
+      },
+      "INFORME-GRUPO.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 21
+      },
+      "INFORME-RESIDUO5.md": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 8
+      },
+      "INFORME.md": {
+        "statistic": 7,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 30
+      },
+      "NAME.md": {
+        "statistic": 4,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "NOVELTY.md": {
+        "statistic": 3,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "PAPER.md": {
+        "statistic": 4,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "PREREGISTRATION-GENERAL.md": {
+        "statistic": 4,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "PREREGISTRATION.md": {
+        "statistic": 7,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 1
+      },
+      "PRIOR-ART.md": {
+        "statistic": 86,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 9
+      },
+      "PROOFS-B31.md": {
+        "statistic": 4,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "PROOFS-GENERAL.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 2,
+        "witness figures": 0
+      },
+      "PROOFS.md": {
+        "statistic": 9,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 15
+      },
+      "TABLA-GENERAL.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 2
+      },
+      "TITLE.md": {
+        "statistic": 48,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "paper/00-abstract.md": {
+        "statistic": 6,
+        "reference order": 2,
+        "conditional family": 0,
+        "witness figures": 10
+      },
+      "paper/01-introduction.md": {
+        "statistic": 4,
+        "reference order": 1,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "paper/02-preliminaries.md": {
+        "statistic": 22,
+        "reference order": 1,
+        "conditional family": 0,
+        "witness figures": 4
+      },
+      "paper/03-orbit-accounting.md": {
+        "statistic": 13,
+        "reference order": 1,
+        "conditional family": 4,
+        "witness figures": 4
+      },
+      "paper/05-characterisation.md": {
+        "statistic": 3,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "paper/06-three-historical-orderings.md": {
+        "statistic": 4,
+        "reference order": 0,
+        "conditional family": 12,
+        "witness figures": 29
+      },
+      "paper/07-landscape.md": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 3,
+        "witness figures": 3
+      },
+      "paper/08-open-problems.md": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 3,
+        "witness figures": 2
+      },
+      "paper/PAPER.md": {
+        "statistic": 54,
+        "reference order": 5,
+        "conditional family": 22,
+        "witness figures": 52
+      },
+      "paper/PAPER.tex": {
+        "statistic": 53,
+        "reference order": 5,
+        "conditional family": 0,
+        "witness figures": 27
+      },
+      "results/certificate-mwd-01.txt": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "results/group-structure.txt": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 52
+      },
+      "src/assemble_paper.py": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "src/b31_characterization.py": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "src/build_paper.py": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "src/declared_values.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 1
+      },
+      "src/general_landscape.py": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "src/general_n6.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 1
+      },
+      "src/general_theorems.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 13,
+        "witness figures": 0
+      },
+      "src/gray.py": {
+        "statistic": 2,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "src/group.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 2,
+        "witness figures": 0
+      },
+      "src/hall_search.py": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 8,
+        "witness figures": 0
+      },
+      "src/measure.py": {
+        "statistic": 18,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "src/proofs.py": {
+        "statistic": 8,
+        "reference order": 0,
+        "conditional family": 122,
+        "witness figures": 1
+      },
+      "src/residuo5.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 6
+      },
+      "src/transitions.py": {
+        "statistic": 1,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 0
+      },
+      "tools/strip_number_bold.py": {
+        "statistic": 0,
+        "reference order": 0,
+        "conditional family": 0,
+        "witness figures": 1
+      }
+    }
+  }
+}
