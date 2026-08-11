@@ -127,6 +127,22 @@ not of the decomposition, not of anything. This section closes one question.
 The review closes when the status line at the top says CLOSED, and it does
 not say that.
 
+### What was decided on this verdict
+
+Alexis Garcia Hurtado, 2026-08-11, session five: this lane does not deposit.
+The decision was taken on this verdict and on the qualification recorded with
+it, and the reason is the qualification rather than the verdict. The act is
+`CLOSED.md` and the decision is recorded in `DECISIONS.md`, decision ten.
+
+Nothing in this file is withdrawn or rewritten by that decision. The verdict
+stands as it was written, including the part of it that says the measurement
+had not been made before, and including the part that says this matters less
+than it sounds.
+
+Session five is the last session of this lane. The review is left open on
+scope items one to five, and a later reader should treat it as open rather
+than as abandoned: the prohibition below is not lifted by a lane ending.
+
 ## Why it does not inherit
 
 The prior lane carried a background review. That review was conducted for a

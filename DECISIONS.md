@@ -141,3 +141,29 @@ remote address is adjusted and verified then.
 
 This does not reopen decision one. The adopted name is `matching-conditioned`
 and the artefacts say so already.
+
+---
+
+## Session five, 2026-08-11. Decider: Alexis Garcia Hurtado
+
+### Ten. This lane does not deposit
+
+Taken after the background review reported both halves of what it found: that
+the measurement had not been made before in the deposits it read, and that
+prior deposits by the same author already carry the observed counts in all
+four conventions and already place that count inside a null whose centre is
+the same and whose dispersion is wider. This lane confirms under a narrower
+null what is published under a wider one and changes no conclusion of it.
+
+The act is `CLOSED.md`, which states the reason with its pointers and its
+verbatim quotations and states nothing else.
+
+Changed by this: nothing is withdrawn, nothing is rewritten, the repository
+stays as it is with its history intact, and the neighbours stay untouched at
+their tags. The preregistration, the result and the review all stand where
+they were written.
+
+This decision does not license a novelty claim and does not close the
+background review, which remains open on five of its six scope items.
+
+Session five is the last session of this lane.
