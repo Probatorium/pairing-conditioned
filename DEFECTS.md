@@ -189,6 +189,42 @@ collapses that exist.
 
 ---
 
+## Defect eight: the session four report miscounted the effort log
+
+Recorded 2026-08-11, in session five.
+
+**What.** `SESSION-REPORT-004.md` states, in its section on the state of the
+chain, "forty entries at close, six added this session". Both figures are
+wrong. The log held forty-one entries at the moment session four closed, and
+seven were added in that session, indices 34 to 40 inclusive, the first being
+the opening entry and the last the closing one. The error is an undercount of
+one in each figure, and it came from counting the entries of the session
+before the closing entry that the same sentence describes.
+
+**How found.** By checking the report against the log after the session had
+closed and the report had been pushed.
+
+**Done.** Corrected forward, here, with the figures stated. `SESSION-REPORT-004.md`
+is not touched. It is the record of what that session reported, and a record
+that gets edited whenever it turns out to be wrong is not a record.
+
+**What the apparatus did, which is worth stating.** The error was visible
+immediately and could not be fixed immediately: the effort log tool refuses a
+work entry outside an open session, so amending the report would have required
+opening a session, which is a deliberate act with its own record. That is the
+apparatus working rather than obstructing. The cost of the friction is one
+session of delay on a two word correction. The benefit is that no artefact of
+this lane can be quietly adjusted between sessions.
+
+**Cost.** A reader who took the count rather than the log itself is off by one
+in two places for one session. The log is authoritative and verifies.
+
+**Practice that follows, and it is the same one defect three produced.** A
+report that states a count of its own record should derive it rather than
+type it. Neither report did.
+
+---
+
 ## Known limitation, since decision six: an all digit object name is refused
 
 The figure gate can now tell an identifier from a measurement, but only where
