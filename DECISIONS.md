@@ -114,3 +114,30 @@ unpublished manuscript is not a citation.
 
 A check that they are not touched is executable and runs with the standing
 gates. See `tools/untouchable.py`.
+
+---
+
+## Session two, 2026-08-11, taken on the sweep's report. Decider: Alexis Garcia Hurtado
+
+Two decisions taken during the publication procedure, on findings the
+procedure produced.
+
+### Eight. The account name in the superseded blob is accepted, not removed
+
+The pre publication sweep found the machine account name in the session one
+version of the contact rules. Accepted and declared rather than removed,
+because removing it means rewriting every commit after the root, which would
+break the commit references already written into the effort log in order to
+hide something that is not a credential.
+
+Recorded in full, with its cost, as defect four.
+
+### Nine. The push goes to the name that exists
+
+The forge still holds the repository under its old name; the rename had not
+been made when the procedure ran. The history is pushed to the address that
+exists. The content travels with the repository when it is renamed, and the
+remote address is adjusted and verified then.
+
+This does not reopen decision one. The adopted name is `matching-conditioned`
+and the artefacts say so already.

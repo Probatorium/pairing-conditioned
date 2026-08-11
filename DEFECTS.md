@@ -79,6 +79,43 @@ than stating a total.
 
 ---
 
+## Defect four: a machine account name is published in a superseded blob
+
+**What.** The version of `CONTACT-RULES.md` written in session one named
+neighbouring repositories by their local checkout directory. Two of those
+lines carry the account name of the machine the work was done on. That blob
+lives in commit `59283f7` and is published with it.
+
+**How found.** By the pre publication sweep, `tools/prepublish.py`, on its
+first run, before the first push. This is the category the sweep exists to
+catch and it caught it.
+
+**Done, in two parts.** The working tree was corrected forward in session
+two, before the sweep ran and for an independent reason: neighbours are now
+named by repository path, because a local path identifies an account rather
+than a repository and is not what the rule is about. The current tree is
+clean and the sweep confirms it.
+
+The historical blob was accepted rather than removed. Decision by Alexis
+Garcia Hurtado, 2026-08-11, taken on the sweep's report before the push.
+Removing it would mean rewriting every commit after the root, which would
+leave the preregistration's signature intact but would break the commit
+references already written into the effort log, and would spend the lane's
+declared position on not rewriting history in order to hide an account name
+that is not a credential.
+
+**Cost, stated plainly.** The account name of the machine is public in the
+history of this repository and will stay public. It is not a secret and it is
+not a credential, and the author's identity is already public on the
+deposited work this lane cites. That is the whole of the exposure and it is
+not reduced by this entry, only recorded.
+
+**Practice that follows.** The sweep runs before every push, not only the
+first, and identifying a neighbour by a local path is now a thing this lane
+does not do.
+
+---
+
 ## Known limitation, since decision six: an all digit object name is refused
 
 The figure gate can now tell an identifier from a measurement, but only where
